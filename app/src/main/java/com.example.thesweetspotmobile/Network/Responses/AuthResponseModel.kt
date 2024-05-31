@@ -1,4 +1,4 @@
-package com.example.sweetspot.Network.Responses
+package com.example.thesweetspotmobile.Network.Responses
 
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass

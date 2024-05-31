@@ -1,4 +1,4 @@
-package com.example.sweetspot.Utils
+package com.example.thesweetspotmobile.Utils
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -6,7 +6,6 @@ import android.graphics.BitmapFactory
 import android.util.Base64
 import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.graphics.asImageBitmap
-import com.example.sweetspot.R
 
 class Decoder {
     companion object {

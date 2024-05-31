@@ -1,4 +1,4 @@
-package com.example.sweetspot.ui.theme
+package com.example.thesweetspotmobile.ui.theme
 
 import android.widget.Button
 import androidx.compose.ui.graphics.Color

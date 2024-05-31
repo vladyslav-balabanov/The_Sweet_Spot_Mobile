@@ -1,4 +1,4 @@
-package com.example.sweetspot.Utils
+package com.example.thesweetspotmobile.Utils
 
 import android.content.Context
 import android.content.SharedPreferences

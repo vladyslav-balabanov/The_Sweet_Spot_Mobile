@@ -1,4 +1,4 @@
-package com.example.sweetspot.Utils
+package com.example.thesweetspotmobile.Utils
 
 enum class OrderStatusEnum(val status: String) {
     NotPaid("Не сплачено!"),

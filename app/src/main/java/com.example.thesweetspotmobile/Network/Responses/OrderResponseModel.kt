@@ -1,4 +1,4 @@
-package com.example.sweetspot.Network.Responses
+package com.example.thesweetspotmobile.Network.Responses
 
 import com.example.thesweetspotmobile.Network.Responses.CartResponseModel
 import com.squareup.moshi.Json
