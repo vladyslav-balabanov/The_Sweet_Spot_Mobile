@@ -9,11 +9,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.sweetspot"
+    namespace = "com.example.thesweetspotmobile"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.sweetspot"
+        applicationId = "com.example.thesweetspotmobile"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
