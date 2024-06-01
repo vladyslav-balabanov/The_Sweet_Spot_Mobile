@@ -1,11 +1,8 @@
 package com.example.thesweetspotmobile.Network.Repository
 
-import android.provider.ContactsContract.CommonDataKinds.Phone
 import com.example.thesweetspotmobile.Network.ApiService
 import com.example.thesweetspotmobile.Network.Responses.UserResponseModel
-import okhttp3.MediaType
 import okhttp3.MediaType.Companion.toMediaType
-import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import okhttp3.RequestBody.Companion.toRequestBody

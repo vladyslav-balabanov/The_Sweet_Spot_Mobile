@@ -3,7 +3,9 @@ package com.example.thesweetspotmobile.Utils
 import android.content.Context
 import android.content.SharedPreferences
 import com.auth0.android.jwt.JWT
+import javax.inject.Singleton
 
+@Singleton
 class TokenManager(context: Context) {
     private var sharedPreferences: SharedPreferences = context.getSharedPreferences("token", Context.MODE_PRIVATE)
 

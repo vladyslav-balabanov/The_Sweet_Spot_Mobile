@@ -1,6 +1,5 @@
 package com.example.thesweetspotmobile.ui.theme
 
-import android.widget.Button
 import androidx.compose.ui.graphics.Color
 
 val Biege80 = Color(0xFFEADED1)

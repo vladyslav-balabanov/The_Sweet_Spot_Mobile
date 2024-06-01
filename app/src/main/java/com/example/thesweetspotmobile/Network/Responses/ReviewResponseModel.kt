@@ -1,7 +1,5 @@
 package com.example.thesweetspotmobile.Network.Responses
 
-import com.example.thesweetspotmobile.Network.Responses.ProductResponseModel
-import com.example.thesweetspotmobile.Network.Responses.UserResponseModel
 import com.squareup.moshi.JsonClass
 
 @JsonClass(generateAdapter = true)

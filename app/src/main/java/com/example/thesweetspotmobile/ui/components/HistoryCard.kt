@@ -31,15 +31,15 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.sweetspot.Network.Responses.CartProductResponseModel
-import com.example.sweetspot.Network.Responses.CartResponseModel
-import com.example.sweetspot.Network.Responses.OrderResponseModel
-import com.example.sweetspot.Network.Responses.ProductResponseModel
-import com.example.sweetspot.Network.Responses.UserResponseModel
-import com.example.sweetspot.Utils.OrderStatusEnum
-import com.example.sweetspot.ui.theme.Brown40
-import com.example.sweetspot.ui.theme.SweetSpotTheme
-import com.example.sweetspot.ui.theme.Tan80
+import com.example.thesweetspotmobile.Network.Responses.CartProductResponseModel
+import com.example.thesweetspotmobile.Network.Responses.CartResponseModel
+import com.example.thesweetspotmobile.Network.Responses.OrderResponseModel
+import com.example.thesweetspotmobile.Network.Responses.ProductResponseModel
+import com.example.thesweetspotmobile.Network.Responses.UserResponseModel
+import com.example.thesweetspotmobile.Utils.OrderStatusEnum
+import com.example.thesweetspotmobile.ui.theme.Brown40
+import com.example.thesweetspotmobile.ui.theme.SweetSpotTheme
+import com.example.thesweetspotmobile.ui.theme.Tan80
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 

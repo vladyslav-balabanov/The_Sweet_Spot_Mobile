@@ -18,8 +18,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.sweetspot.R
-import com.example.sweetspot.ui.theme.Brown40
+import com.example.thesweetspotmobile.R
+import com.example.thesweetspotmobile.ui.theme.Brown40
 
 @Preview(showBackground = true)
 @Composable

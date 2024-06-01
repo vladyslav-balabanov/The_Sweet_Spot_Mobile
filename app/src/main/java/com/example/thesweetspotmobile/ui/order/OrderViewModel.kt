@@ -5,11 +5,9 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.sweetspot.Network.Repository.OrderRepository
-import com.example.sweetspot.Network.Requests.OrderRequest
-import com.example.sweetspot.Network.Responses.CartResponseModel
-import com.example.sweetspot.Utils.TokenManager
-import com.squareup.moshi.Moshi
+import com.example.thesweetspotmobile.Network.Repository.OrderRepository
+import com.example.thesweetspotmobile.Network.Requests.OrderRequest
+import com.example.thesweetspotmobile.Utils.TokenManager
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject

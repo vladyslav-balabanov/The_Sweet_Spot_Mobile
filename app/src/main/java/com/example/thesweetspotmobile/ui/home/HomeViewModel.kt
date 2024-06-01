@@ -4,21 +4,22 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.sweetspot.Network.Repository.CartRepository
-import com.example.sweetspot.Network.Repository.ProductRepository
-import com.example.sweetspot.Network.Requests.CartRequest
-import com.example.sweetspot.Network.Responses.CartResponseModel
-import com.example.sweetspot.Network.Responses.ProductResponseModel
-import com.example.sweetspot.Utils.TokenManager
+import com.example.thesweetspotmobile.Network.Repository.CartRepository
+import com.example.thesweetspotmobile.Network.Repository.ProductRepository
+import com.example.thesweetspotmobile.Network.Requests.CartRequest
+import com.example.thesweetspotmobile.Network.Responses.CartResponseModel
+import com.example.thesweetspotmobile.Network.Responses.ProductResponseModel
+import com.example.thesweetspotmobile.Utils.TokenManager
+
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
 class HomeViewModel @Inject constructor(
-        private val productRepository: ProductRepository,
-        private val repository: CartRepository,
-        private val tokenManager: TokenManager
+    private val productRepository: ProductRepository,
+    private val repository: CartRepository,
+    private val tokenManager: TokenManager
 ) : ViewModel() {
 
     private val _products = MutableLiveData<List<ProductResponseModel>>()

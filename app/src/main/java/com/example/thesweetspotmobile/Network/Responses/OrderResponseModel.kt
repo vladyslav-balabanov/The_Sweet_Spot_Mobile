@@ -1,6 +1,5 @@
 package com.example.thesweetspotmobile.Network.Responses
 
-import com.example.thesweetspotmobile.Network.Responses.CartResponseModel
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 
