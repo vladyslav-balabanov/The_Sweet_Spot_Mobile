@@ -49,6 +49,11 @@ fun OrderCard(
         productId: Int,
         rating: Int,
         comment: String
+    ) -> Unit,
+    onIconClick: (
+        productId: Int,
+        rating: Int,
+        comment: String
     ) -> Unit
 ) {
     var isFirstFocus by remember { mutableStateOf(true) }
@@ -137,7 +142,9 @@ fun OrderCard(
                     }
                     IconButton(
                         onClick = {
-
+                            if (comment.text.isNotEmpty() && rating > 0) {
+                                onIconClick(product.id, rating, comment.text)
+                            }
                         },
                     ) {
                         Icon(
