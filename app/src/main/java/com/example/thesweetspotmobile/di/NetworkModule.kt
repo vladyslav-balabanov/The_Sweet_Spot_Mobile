@@ -1,7 +1,6 @@
 package com.example.thesweetspotmobile.di
 
 import com.example.thesweetspotmobile.Network.ApiService
-import com.example.thesweetspotmobile.Network.BasicAuthInterceptor
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import dagger.Module
@@ -28,21 +27,9 @@ object NetworkModule {
 
     @Singleton
     @Provides
-    fun provideBasicAuthInterceptor(): BasicAuthInterceptor {
-        val username = "11178930"
-        val password = "60-dayfreetrial"
-        return BasicAuthInterceptor(username, password)
-    }
-
-    @Singleton
-    @Provides
-    fun provideOkHttpClient(
-        loggingInterceptor: HttpLoggingInterceptor,
-        basicAuthInterceptor: BasicAuthInterceptor
-    ): OkHttpClient {
+    fun provideOkHttpClient(loggingInterceptor: HttpLoggingInterceptor): OkHttpClient {
         return OkHttpClient.Builder()
             .addInterceptor(loggingInterceptor)
-            .addInterceptor(basicAuthInterceptor)
             .build()
     }
 
@@ -58,7 +45,7 @@ object NetworkModule {
     @Provides
     fun provideRetrofit(okHttpClient: OkHttpClient, moshi: Moshi): ApiService {
         return Retrofit.Builder()
-            .baseUrl(ApiService.BASE_URL)  // Updated base URL
+            .baseUrl(ApiService.BASE_URL)
             .client(okHttpClient)
             .addConverterFactory(MoshiConverterFactory.create(moshi))
             .build()
